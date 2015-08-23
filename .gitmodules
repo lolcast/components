@@ -1,3 +1,6 @@
 [submodule "gpac/gpac"]
 	path = gpac/gpac
 	url = https://github.com/gpac/gpac.git
+[submodule "nginx-rtmp/nginx-rtmp-module"]
+	path = nginx-rtmp/nginx-rtmp-module
+	url = https://github.com/arut/nginx-rtmp-module.git
