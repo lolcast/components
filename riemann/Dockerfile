@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN apt-get update \
 	&& apt-get install -y curl default-jre-headless
-RUN curl -O http://aphyr.com/riemann/riemann_0.2.10_all.deb \
+RUN curl -O -L http://aphyr.com/riemann/riemann_0.2.10_all.deb \
 	&& dpkg -i riemann*deb
 EXPOSE 5555
 EXPOSE 5555/udp
