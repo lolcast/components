@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install -y \
 	libxvidcore-dev \
 	linux-sound-base \
 	make \
-        pkg-config \
+	pkg-config \
 	subversion \
 	x11proto-gl-dev \
 	x11proto-video-dev \
