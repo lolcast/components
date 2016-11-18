@@ -13,7 +13,7 @@ RUN cd /root \
 
 RUN cd /root && curl -L -O ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 \
     && mkdir x264 && tar xjf last_x264.tar.bz2 -C x264 --strip 1 && cd x264 \
-    && ./configure --enable-static --enable-shared && make install
+    && ./configure --enable-static --enable-shared --disable-lavf && make install
 
 RUN cd /root && curl -L -O https://libav.org/releases/libav-11.tar.gz \
     && mkdir libav && tar xzf libav-11.tar.gz -C libav --strip 1 && cd libav \
