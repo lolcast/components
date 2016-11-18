@@ -18,7 +18,7 @@ RUN cd /root && curl -L -O ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.t
 RUN cd /root && curl -L -O https://libav.org/releases/libav-11.tar.gz \
     && mkdir libav && tar xzf libav-11.tar.gz -C libav --strip 1 && cd libav \
     && ./configure --enable-gpl --enable-nonfree \
-        --enable-libfdk-aac --enable-libx264 \
+        --enable-libfdk-aac --enable-libx264 --enable-shared \
     && make install
 
 RUN groupadd nginx
